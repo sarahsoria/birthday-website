@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 19th Birthday! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Happy Birthday Juanny! 💖</h1>
+
+        <!-- Floating Hearts Animation -->
+        <div class="heart-container"></div>
+
+        <div id="questionnaire">
+            <p class="question">Do you know how special today is? 🎉</p>
+            <button class="choice-btn" onclick="nextQuestion(1)">Yes! 🥳</button>
+            <button class="choice-btn" onclick="nextQuestion(1)">Tell me! 🤭</button>
+
+            <p class="question hidden" id="q2">Do you realize how many people appreciate you? 💕</p>
+            <button class="choice-btn hidden" id="q2-yes" onclick="nextQuestion(2)">I think so! 😊</button>
+            <button class="choice-btn hidden" id="q2-no" onclick="nextQuestion(2)">Maybe a little 😳</button>
+
+            <p class="question hidden" id="q3">Would you believe me if I said you're one of the most amazing people ever? ✨</p>
+            <button class="choice-btn hidden" id="q3-yes" onclick="showFinalMessage()">Of course! 🥺💕</button>
+            <button class="choice-btn hidden" id="q3-no" onclick="showFinalMessage()">I’m not sure 😳</button>
+        </div>
+
+        <!-- Final Message -->
+        <div id="finalMessage" class="hidden">
+            <h2 class="glow-text">A Special Message for You 💖</h2>
+            <p id="finalText"></p>
+            <div class="people-scene">
+                <div class="person boy">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arms">
+                        <div class="arm"></div>
+                        <div class="arm"></div>
+                    </div>
+                    <div class="legs">
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+                    </div>
+                </div>
+                <div class="person girl">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arms">
+                        <div class="arm"></div>
+                        <div class="arm"></div>
+                    </div>
+                    <div class="legs">
+                        <div class="leg"></div>
+                        <div class="leg"></div>
+                    </div>
+                </div>
+                <div class="sunset"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
